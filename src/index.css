@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.widget-body {
+  border-radius: 18.89px;
+  background: #363c43;
+  box-shadow: 5.67px 5.67px 3.78px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.react-tabs,
+.gallery-body {
+  padding: 17px 53px;
+}
+
+.react-tabs__tab-list {
+  padding: 6px;
+  border-bottom: none !important;
+  border-radius: 23px;
+  background: #171717;
+  box-shadow: 0px 4.96px 12.4px 2.48px rgba(0, 0, 0, 0.25) inset;
+  text-align: center;
+}
+
+.react-tabs__tab {
+  color: #a3adb2;
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 0;
+  border: none !important;
+  margin-right: 6px;
+}
+
+.react-tabs__tab--selected {
+  border-color: transparent;
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 16px;
+  background: #28292f;
+  box-shadow: -8.433px -16.867px 50.6px -16.867px #485b71,
+    13.493px 16.867px 67.467px 8.433px #0a0a0a;
+}
+.react-tabs__tab:focus:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: transparent;
+}
+
+.add-btn {
+  border-radius: 104px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  box-shadow: -0.5px -0.5px 6.9px 0px rgba(255, 255, 255, 0.25),
+    9px 10px 7.1px 0px rgba(0, 0, 0, 0.4),
+    0px 0px 48.906px 0px rgba(255, 255, 255, 0.05) inset,
+    0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15) inset;
+  backdrop-filter: blur(52.27996826171875px);
+}
+
+.arw-btn {
+  background: linear-gradient(139deg, #303439 12.4%, #161718 94.96%);
+  filter: drop-shadow(4px 5px 30px #101213) drop-shadow(-5px -3px 30px #96bee7);
+  color: white;
+}
