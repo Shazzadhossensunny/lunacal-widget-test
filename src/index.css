@@ -6,12 +6,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #373e44 -100%, #191b1f 100%);
+  box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.5);
 }
 .widget-body {
   border-radius: 18.89px;
   background: #363c43;
   box-shadow: 5.67px 5.67px 3.78px 0px rgba(0, 0, 0, 0.4);
   position: relative;
+  margin-bottom: 24px;
 }
 .react-tabs,
 .gallery-body {
@@ -20,6 +24,7 @@ body {
 
 .react-tabs__tab-list {
   padding: 6px;
+  margin-bottom: 40px;
   border-bottom: none !important;
   border-radius: 23px;
   background: #171717;
@@ -55,6 +60,11 @@ body {
   background: transparent;
 }
 
+.react-tabs__tab-panel--selected {
+  overflow-x: auto;
+  height: 200px;
+}
+
 .add-btn {
   border-radius: 104px;
   background: rgba(255, 255, 255, 0.03);
@@ -74,4 +84,58 @@ body {
   background: linear-gradient(139deg, #303439 12.4%, #161718 94.96%);
   filter: drop-shadow(4px 5px 30px #101213) drop-shadow(-5px -3px 30px #96bee7);
   color: white;
+}
+
+.square {
+  width: 9.312px;
+  height: 9.312px;
+  border-radius: 1.164px;
+  background: #4a4e54;
+}
+
+.divider-1 {
+  width: calc(100% - 106px);
+  margin: 0px auto;
+  height: 4px;
+  border-radius: 2.5px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(40, 40, 40, 0.1) 0%,
+      rgba(248, 248, 248, 0.1) 100%
+    );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.divider-2 {
+  width: calc(100% - 106px);
+  margin: 0px auto;
+  height: 4px;
+  border-radius: 2.5px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(40, 40, 40, 0.1) 0%,
+      rgba(248, 248, 248, 0.1) 100%
+    );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
